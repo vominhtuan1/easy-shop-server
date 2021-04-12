@@ -74,12 +74,12 @@ router.post('/register', async (req,res)=>{
         email: req.body.email,
         passwordHash: bcrypt.hashSync(req.body.password, 10),
         phone: req.body.phone,
-        isAdmin: req.body.isAdmin,
-        street: req.body.street,
-        apartment: req.body.apartment,
-        zip: req.body.zip,
-        city: req.body.city,
-        country: req.body.country,
+        // isAdmin: req.body.isAdmin,
+        // street: req.body.street,
+        // apartment: req.body.apartment,
+        // zip: req.body.zip,
+        // city: req.body.city,
+        // country: req.body.country,
     })
     user = await user.save();
 
